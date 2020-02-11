@@ -17,7 +17,7 @@ import java.util.List;
  * @date: 2020年2月11日 下午3:27:41
  */
 public class StreamUtil {
-	//读取文件对象到list集合中
+	//读取文件对象到list集合中 
 	public static List<String > readFile2List(File file) throws FileNotFoundException{
 			FileInputStream fileInputStream = new FileInputStream(file);
 		return readFile2List(fileInputStream);

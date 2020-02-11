@@ -34,7 +34,7 @@ public class StringUtil {
 		return str;
 	}
 	//方法3：返回参数length个中文汉字字符串，字符集必须在GB2312(相当于中文简体)范围内，例如“中呀被”(5分)
-	public static String randomChineseString1(int length){
+	public static String randomChineseString(int length){
 		StringBuilder sb= new StringBuilder();
 		for (int i = 0; i < length; i++) {
 			sb.append(randomChineseString());
@@ -47,7 +47,7 @@ public class StringUtil {
 		//获取随机姓氏
 		String firstName=str[RandomUtil.random(0, str.length-1)];
 		//获取随机姓名
-		String lastName=randomChineseString1(RandomUtil.random(1, 2));
+		String lastName=randomChineseString(RandomUtil.random(1, 2));
 		
 		return firstName+lastName;
 	

@@ -25,7 +25,7 @@ public class StringUtilTest {
 	}
 	@Test
 	public void testRandomChineseString1() {
-		String string = StringUtil.randomChineseString1(1000);
+		String string = StringUtil.randomChineseString(1000);
 		System.out.println(string);
 	}
 

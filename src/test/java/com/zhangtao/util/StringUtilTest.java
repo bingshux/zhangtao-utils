@@ -5,6 +5,13 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class StringUtilTest {
+	
+	@Test
+	public void testIsHttpUrl() {
+		String url="abc";
+		//String url="http://www.baidu.com";
+		System.out.println(StringUtil.isHttpUrl(url));
+	}
 
 	@Test
 	public void testHasLength() {

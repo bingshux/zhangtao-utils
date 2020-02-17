@@ -4,6 +4,20 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class DateUtil {
+	
+	
+	public static Date subDate(Date date) {
+		
+		Calendar c = Calendar.getInstance();
+		
+		c.setTime(date);
+		
+		
+		c.add(Calendar.DATE, -1);
+		
+		return c.getTime();
+		
+	}
 
 	//获取一个月的月初 如:2019-01-01 00:00:00
 	public static Date initMonth(Date date) {

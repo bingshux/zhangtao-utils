@@ -45,4 +45,20 @@ public class StreamUtil {
 		}
 		return list;
 	}
+	/**
+	 * @Title: close   
+	 * @Description: 批量关闭流   
+	 * @param: @param autoCloseables      
+	 * @return: void      
+	 * @throws
+	 */
+	public static void close(AutoCloseable... autoCloseables ) {
+		for(AutoCloseable autoCloseable:autoCloseables) {
+			try {
+				autoCloseable.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
 }

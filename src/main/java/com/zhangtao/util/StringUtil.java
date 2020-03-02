@@ -115,4 +115,21 @@ public class StringUtil {
 		}
 		return false;
 	}
+	/**
+	 * @Title: isLetter   
+	 * @Description: ÅĞ¶ÏÊÇ·ñÈ«Îª×ÖÄ¸   
+	 * @param: @param str
+	 * @param: @return      
+	 * @return: boolean      
+	 * @throws
+	 */
+	public static boolean isLetter(String str) {
+		if(hasText(str)) {
+			return false;
+		}
+		str = str.toLowerCase();
+		String regex = "[a-z]+";
+		return str.matches(regex);
+	}
+	
 }
